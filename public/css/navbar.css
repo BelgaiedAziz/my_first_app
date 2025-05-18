@@ -1,0 +1,130 @@
+
+.navbar {
+    background: rgba(17, 24, 39, 1) !important;
+    padding: 0.8rem 1rem;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-link {
+    color: white !important;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    margin: 0 20px;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #d32f2f !important;
+  }
+  
+  .nav-link.active {
+    color: #d32f2f !important;
+    border-bottom: 2px solid #d32f2f;
+  }
+  
+  .desktop-login {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+    transition: all 0.3s ease;
+  }
+  
+  .desktop-login:hover {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+  }
+  
+  .mobile-login {
+    color: #d32f2f !important;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    display: none;
+  }
+  
+  @media (max-width: 992px) {
+    .desktop-login {
+      display: none;
+    }
+    .mobile-login {
+      display: block;
+    }
+  
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100vh;
+      background: rgba(17, 24, 39, 1);
+      padding: 1rem;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      overflow-y: auto;
+    }
+  
+    .navbar-collapse.show {
+      transform: translateX(0);
+    }
+  
+    .navbar-nav {
+      flex-direction: column !important;
+      margin-top: 3rem;
+    }
+  
+    .nav-item {
+      margin: 0.5rem 0;
+    }
+  
+    .d-flex {
+      margin-top: auto;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+  
+    .navbar-collapse::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    .navbar-collapse.show::before {
+      opacity: 1;
+    }
+  
+    .navbar-toggler {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1001;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .mobile-login {
+      display: none;
+    }
+    .desktop-login {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .bi-person {
+    margin-right: 5px;
+    font-size: 1rem;
+  }

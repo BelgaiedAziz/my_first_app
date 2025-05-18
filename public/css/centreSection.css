@@ -1,0 +1,209 @@
+.centers-section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .centers-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  .section-description {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
+  }
+  .centers-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-container {
+    background-color: #111827;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border-radius: 8px 0 0 8px;
+    width: 100%;
+  }
+  .centers-search {
+    padding: 1rem;
+  }
+  .search-filters {
+    padding: 1rem;
+  }
+  .search-filters p {
+    color: #f3f4f6;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  .search-box:focus-within {
+    box-shadow: 0 0 0 2px #d32f2f;
+  }
+  .search-box i {
+    color: #9ca3af;
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+  }
+  .search-box input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 0.95rem;
+  }
+  .search-box input::placeholder {
+    color: #9ca3af;
+  }
+  .blood-group-filters h4 {
+    color: #f3f4f6;
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .blood-groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .blood-groups button {
+    padding: 0.5rem 0.75rem;
+    background-color: #1f2937;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #e5e7eb;
+    transition: all 0.2s ease;
+    border: none;
+  }
+  .blood-groups button:hover {
+    background-color: #374151;
+  }
+  .blood-groups button.active {
+    background-color: #d32f2f;
+    color: white;
+    font-weight: 500;
+  }
+  .centers-list {
+    display: grid;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+  }
+  .center-card {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    position: relative;
+    background-color: #1f2937;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .center-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .center-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: #f9fafb;
+    padding-right: 3rem;
+  }
+  .center-card p {
+    margin: 0 0 1rem;
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+  .blood-needs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .blood-badge {
+    background-color: rgba(211, 47, 47, 0.2);
+    color: #f87171;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .distance {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    color: #9ca3af;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+  }
+  .distance::before {
+    content: "•";
+    margin-right: 0.25rem;
+    color: #d32f2f;
+  }
+  .map-placeholder {
+    background-color: #364150;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    max-width: 100%;
+  }
+  .map-placeholder i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .map-placeholder p {
+    margin: 0 0 15px;
+  }
+  @media (min-width: 640px) {
+    .centers-section {
+      padding: 3rem 1.5rem;
+    }
+    .centers-section h2 {
+      font-size: 2rem;
+    }
+    .centers-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 768px) {
+    .centers-section-container {
+      flex-direction: row;
+    }
+    .search-container {
+      width: 40%;
+      min-width: 300px;
+    }
+    .map-placeholder {
+      width: 60%;
+      height: auto;
+    }
+    .centers-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (min-width: 1024px) {
+    .centers-section {
+      padding: 4rem 2rem;
+    }
+    .centers-section h2 {
+      font-size: 2.25rem;
+    }
+    .search-container {
+      width: 35%;
+    }
+    .map-placeholder {
+      width: 60%;
+    }
+  }

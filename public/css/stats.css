@@ -1,0 +1,70 @@
+.stats-section {
+    padding: 60px 0;
+    background-color: rgba(17, 24, 39, 1);
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-card {
+    background-color: rgba(32, 41, 56, 1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .stat-card h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .bi-heart,
+  .bi-people,
+  .bi-building,
+  .bi-droplet {
+    font-size: 1.5rem;
+    color: rgba(211, 47, 47, 0.3);
+    margin-bottom: 30px;
+    background-color: rgb(46, 58, 79);
+    padding: 5px 10px;
+    border-radius: 50px;
+  }
+  
+  .bi-people {
+    color: rgb(0, 140, 255);
+  }
+  
+  .bi-building {
+    color: rgb(0, 255, 140);
+  }
+  
+  .bi-droplet {
+    color: rgb(255, 140, 0);
+  }
+  
+  .stat-card p {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+  }
+  
+  .stat-card span {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  @media (max-width: 992px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
